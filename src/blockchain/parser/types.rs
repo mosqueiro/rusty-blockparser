@@ -31,7 +31,7 @@ impl Coin for Bitcoin {
     fn name(&self)        -> String { String::from("Bitcoin")  }
     fn magic(&self)       -> u32 { 0x4bb2131a }
     fn version_id(&self)  -> u8  { 0x00 }
-    fn genesis(&self)     -> [u8; 32] { hex_to_arr32_swapped("000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f") }
+    fn genesis(&self)     -> [u8; 32] { hex_to_arr32_swapped("00000194d1a0b89f2d487032ca7f3794f9ffe9e073f4b61442e1170e37c7e705") }
     fn default_folder(&self) -> PathBuf { Path::new(".bitcoin").join("blocks") }
 }
 
